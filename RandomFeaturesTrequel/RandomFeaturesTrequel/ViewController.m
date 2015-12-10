@@ -52,4 +52,20 @@
     [controller didMoveToParentViewController:self];
 }
 
+
+/* PUT THIS CODE IN SOMEWHERE
+ CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+ gradientLayer.frame = self.rulesAndRanksButton.frame;
+ [self.rulesAndRanksButton.layer insertSublayer:gradientLayer atIndex:0];
+ UIColor *gold = [UIColor colorWithHue:.42 saturation:.63 brightness:.97 alpha:1];
+ UIColor *white = [UIColor whiteColor];
+ 
+ NSMutableArray *colorsArray = [[NSMutableArray alloc] init];
+ [colorsArray addObject:(id)gold.CGColor];
+ [colorsArray addObject:(id)white.CGColor];
+ [colorsArray addObject:(id)gold.CGColor];
+ 
+ gradientLayer.colors = colorsArray;
+ */
+
 @end
