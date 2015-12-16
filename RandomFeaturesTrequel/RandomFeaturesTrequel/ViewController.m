@@ -16,43 +16,60 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(void)setEmbeddedViewController:(UIViewController *)controller
+- (IBAction)buttonTapped:(id)sender
 {
-    if([self.childViewControllers containsObject:controller]) {
-        return;
-    }
+    NSArray *colors = [NSArray arrayWithObjects:
+                       [UIColor colorWithRed:166.0f /255.0f green:0.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:178.5f /255.0f green:64.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:178.5f /255.0f green:102.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:217.0f / 255.0f green:127.5f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:229.5f /255.0f green:166.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:255.0f /255.0f green:166.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       
+                       [UIColor colorWithRed:255.0f /255.0f green:217.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:255.0f /255.0f green:255.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:204.0f /255.0f green:255.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:153.0f /255.0f green:255.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:135.0f /255.0f green:242.0f / 255.0f blue:242.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:89.0f /255.0f green:229.5f / 255.0f blue:178.5f / 255.0f alpha:1.0f],
+                       
+                       [UIColor colorWithRed:89.0f /255.0f green:217.0f / 255.0f blue:204.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:51.0f /255.0f green:204.0f / 255.0f blue:217.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:0.0f /255.0f green:178.5f / 255.0f blue:242.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:0.0f /255.0f green:140.0f / 255.0f blue:242.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:0.0f /255.0f green:115.0f / 255.0f blue:255.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:103.0f /255.0f green:89.0f / 255.0f blue:255.0f / 255.0f alpha:1.0f],
+                       
+                       [UIColor colorWithRed:140.0f /255.0f green:76.5f / 255.0f blue:255.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:140.0f /255.0f green:38.0f / 255.0f blue:255.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:140.0f /255.0f green:13.0f / 255.0f blue:229.5f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:140.0f /255.0f green:0.0f / 255.0f blue:191.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:140.0f /255.0f green:0.0f / 255.0f blue:140.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:153.0f /255.0f green:0.0f / 255.0f blue:115.0f / 255.0f alpha:1.0f],
+                       
+                       [UIColor colorWithRed:0.0f /255.0f green:0.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:0.0f /255.0f green:0.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:0.0f /255.0f green:0.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:0.0f /255.0f green:0.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:0.0f /255.0f green:0.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f],
+                       [UIColor colorWithRed:0.0f /255.0f green:0.0f / 255.0f blue:0.0f / 255.0f alpha:1.0f], nil];
     
-    for(UIViewController *vc in self.childViewControllers) {
-        [vc willMoveToParentViewController:nil];
-        
-        if(vc.isViewLoaded) {
-            [vc.view removeFromSuperview];
-        }
-        
-        [vc removeFromParentViewController];
-    }
-    
-    if(!controller) {
-        return;
-    }
-    /*
-    [self addChildViewController:controller];
-    [self.containerView addSubview:controller.view];
-    [controller.view mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(@0);
-    }];
-    [controller didMoveToParentViewController:self];
-    */
+//    for (UIColor *color in colors)
+//    {
+//        NSLog(@"color!");
+//        [UIView animateWithDuration:1.0
+//                              delay:.25
+//                            options:nil
+//                         animations:^{
+//            self.view.backgroundColor = color;
+//        }
+//                         completion:nil
+//        }];
+//    }
 }
-
 
 /* PUT THIS CODE IN SOMEWHERE
  CAGradientLayer *gradientLayer = [CAGradientLayer layer];
