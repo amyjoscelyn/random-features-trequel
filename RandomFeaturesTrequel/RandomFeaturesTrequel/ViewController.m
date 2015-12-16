@@ -43,13 +43,14 @@
     if(!controller) {
         return;
     }
-    
+    /*
     [self addChildViewController:controller];
     [self.containerView addSubview:controller.view];
     [controller.view mas_updateConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(@0);
     }];
     [controller didMoveToParentViewController:self];
+    */
 }
 
 

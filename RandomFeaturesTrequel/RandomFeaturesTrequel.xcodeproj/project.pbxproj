@@ -501,6 +501,7 @@
 				3DC1457F1C16072E0086F0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DC145801C16072E0086F0B8 /* Build configuration list for PBXNativeTarget "RandomFeaturesTrequelTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +510,7 @@
 				3DC145821C16072E0086F0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DC145831C16072E0086F0B8 /* Build configuration list for PBXNativeTarget "RandomFeaturesTrequelUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +519,7 @@
 				3DC145851C16072E0086F0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

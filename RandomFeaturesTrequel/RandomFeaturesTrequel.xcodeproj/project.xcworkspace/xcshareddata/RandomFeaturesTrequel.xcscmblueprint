@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "36D4DCC043D3C670312868CE92FB24362C371A85",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D90F5E334ACD4D871996B2EC699BFE318730B491" : 0,
+    "36D4DCC043D3C670312868CE92FB24362C371A85" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0E11FDC9-0EC5-4035-90F6-8C4684AC8695",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D90F5E334ACD4D871996B2EC699BFE318730B491" : "",
+    "36D4DCC043D3C670312868CE92FB24362C371A85" : "random-features-trequel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RandomFeaturesTrequel",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RandomFeaturesTrequel\/RandomFeaturesTrequel.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:amyjoscelyn\/random-features-trequel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "36D4DCC043D3C670312868CE92FB24362C371A85"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:amyjoscelyn\/random-features.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D90F5E334ACD4D871996B2EC699BFE318730B491"
+    }
+  ]
+}
